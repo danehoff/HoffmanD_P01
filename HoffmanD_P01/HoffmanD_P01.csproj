@@ -52,6 +52,8 @@
     <Compile Include="AddorEditInterface.Designer.cs">
       <DependentUpon>AddorEditInterface.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlarmController.cs" />
+    <Compile Include="AlarmModel.cs" />
     <Compile Include="UserInterface.cs">
       <SubType>Form</SubType>
     </Compile>

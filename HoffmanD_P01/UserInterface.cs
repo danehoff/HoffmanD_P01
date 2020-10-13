@@ -31,22 +31,25 @@ namespace HoffmanD_P01
         /// String holding the status of our alarm.
         /// </summary>
         private string statusOfAlarm;
+  
+
+        public string StatusOfAlarm { get => statusOfAlarm; set => statusOfAlarm = value; }
 
         /// <summary>
         /// Reference to other form
         /// </summary>
         private AddOrEditInterface addEdit;
 
-        /// <summary>
-        /// Name of the path to the file that holds our saved alarms
-        /// </summary>
-        private string path = "SaveAlarms.txt";
 
         /// <summary>
         /// String to combine our datetime and the on or off string
         /// </summary>
         private string combo;
 
+        /// <summary>
+        /// Name of the path to the file that holds our saved alarms
+        /// </summary>
+        private string path = "SaveAlarms.txt";
         /// <summary>
         /// Constructor
         /// </summary>
@@ -82,6 +85,7 @@ namespace HoffmanD_P01
 
         }
         
+        
         /// <summary>
         /// Adds the time and whether the alarm is on or off to the listbox
         /// </summary>
@@ -95,7 +99,7 @@ namespace HoffmanD_P01
                 
                 combo = time.ToString("h:mm tt") + " " + setOn;
                 uxSetAlarmList.Items.Add(combo);       
-
+                
             }
 
             if(uxStopButton.Enabled != false)
